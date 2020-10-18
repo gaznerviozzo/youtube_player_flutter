@@ -180,9 +180,7 @@ class YoutubePlayer extends StatefulWidget {
     String quality = ThumbnailQuality.standard,
     bool webp = true,
   }) =>
-      webp
-          ? 'https://img.youtube.com/vi_webp/$videoId/$quality.webp'
-          : 'https://img.youtube.com/vi/$videoId/$quality.jpg';
+      'https://img.youtube.com/vi/$videoId/$quality.jpg';
 
   @override
   _YoutubePlayerState createState() => _YoutubePlayerState();
